@@ -16,6 +16,7 @@ let mySprite = sprites.create(assets.image`My Hero`, SpriteKind.Player)
 controller.moveSprite(mySprite, 100, 100)
 mySprite.setStayInScreen(true)
 info.setLife(3)
+info.setScore(0)
 game.onUpdateInterval(500, function () {
     choice = randint(1, 3)
     if (choice == 1) {
